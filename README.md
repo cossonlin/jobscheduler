@@ -59,6 +59,21 @@ java -jar target/JobScheduler-{versionNo}.jar
 
 We use GIT for versioning.
 
+## Usage
+
+The application is running on 8081 port which is setting in application.yml
+
+Load all schedule tasks from browser:  
+http://localhost:8081/taskschedule/loadAllSchedules
+
+CURL command for NONE GET method
+```
+curl -X POST 'http://localhost:8081/taskschedule/addSchedule1?cronExpression=%2A/10%20%2A%20%2A%20%2A%20%2A%20%2A'
+```
+```
+curl -X DELETE 'http://localhost:8081/taskschedule/deleteSchedule/1'
+```
+
 ## Authors
 
 * **Lin Lin**
