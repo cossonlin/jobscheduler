@@ -1,0 +1,1 @@
+INSERT into TASK_SCHEDULE (CONNECTOR_ID, SCHEDULE) values (1, '*/10 * * * * *');
